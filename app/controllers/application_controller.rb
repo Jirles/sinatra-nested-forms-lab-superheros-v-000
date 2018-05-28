@@ -9,7 +9,8 @@ class App < Sinatra::Base
   end 
   
   post "/teams" do
-    #create team from params 
+    #create team from params
+    @team = Team.new(params[:team])
     #iterate through hero hashes and create Heroes, add to team.heroes 
     erb :team 
   end 
