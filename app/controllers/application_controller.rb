@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -16,6 +17,7 @@ class App < Sinatra::Base
       member = Hero.new(hero)
       @team.add_hero(member)
     end 
+    binding.pry
     erb :team 
   end 
 
