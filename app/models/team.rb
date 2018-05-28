@@ -1,11 +1,11 @@
 class Team 
   
-  attr_accessor :name, :moto, :heroes
+  attr_accessor :name, :motto, :heroes
   TEAMS = []
   
   def initialize(args)
     @name = args[:name]
-    @moto = args[:moto]
+    @motto = args[:motto]
     @heroes = []
     TEAMS << self 
   end
